@@ -59,21 +59,30 @@ class CustomerServiceManager:
 
 # Example usage
 if __name__ == "__main__":
-    cs_manager = CustomerServiceManager()
+    customer_service_manager = CustomerServiceManager()
 
     # Add customer service employees
-    cs_manager.add_cs_employee(1, "Chris Brown", "Customer Service Rep")
-    cs_manager.add_cs_employee(2, "Emma Davis", "Customer Support Specialist")
+    customer_service_manager.add_cs_employee(1, "Chris Brown", "Customer Service Rep")
+    customer_service_manager.add_cs_employee(2, "Emma Wilson", "Customer Support Specialist")
+    customer_service_manager.add_cs_employee(3, "Derek Robinson", "Customer Support Specialist")
+    customer_service_manager.add_cs_employee(4, "Rachel Raynolds", "Customer Support Specialist")
 
     # Log service information
-    cs_manager.log_service(1, 15, 4.5)  # 15 minutes call with 4.5 satisfaction
-    cs_manager.log_service(1, 10, 4.0)  # 10 minutes call with 4.0 satisfaction
-    cs_manager.log_service(2, 20, 5.0)  # 20 minutes call with 5.0 satisfaction
+    customer_service_manager.log_service(1, 15, 4.5)  # 15 minutes call with 4.5 satisfaction
+    customer_service_manager.log_service(1, 10, 4.0)  # 10 minutes call with 4.0 satisfaction
+    customer_service_manager.log_service(2, 20, 5.0)  # 20 minutes call with 5.0 satisfaction
+    customer_service_manager.log_service(3, 25, 4.8)  # 25 minutes call with 4.8 satisfaction
+    customer_service_manager.log_service(4, 30, 4.7)  # 30 minutes call with 4.7 satisfaction
+    customer_service_manager.log_service(4, 18, 4.3)  # 18 minutes call with 4.3 satisfaction
 
     # Set service area
-    cs_manager.set_service_area(1, "Product Support")
-    cs_manager.set_service_area(2, "Technical Assistance")
+    customer_service_manager.set_service_area(1, "Product Support")
+    customer_service_manager.set_service_area(2, "Technical Assistance")
+    customer_service_manager.set_service_area(3, "Technical Support")
+    customer_service_manager.set_service_area(4, "Customer Relations")
 
     # Display customer service info for employees
-    cs_manager.display_cs_employee_info(1)
-    cs_manager.display_cs_employee_info(2)
+    customer_service_manager.display_cs_employee_info(1)
+    customer_service_manager.display_cs_employee_info(2)
+    customer_service_manager.display_cs_employee_info(3)
+    customer_service_manager.display_cs_employee_info(4)
